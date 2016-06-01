@@ -1,0 +1,2 @@
+ember github-pages:commit --message "deploy to GH pages" --branch="gh-pages"
+git push origin gh-pages
