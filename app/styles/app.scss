@@ -1,0 +1,41 @@
+@import "_variables";
+@import "_mailchimp";
+
+body {
+  background: $secondary-color;
+}
+
+header {
+  color: white;
+}
+
+.logo {
+  width: 100%;
+}
+
+nav {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-item a {
+  color: white;
+}
+
+a .fa {
+  color: white;
+}
+
+.subscribe-form {
+  color: $secondary-color;
+}
+
+.main-content {
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

@@ -1,7 +1,47 @@
-<div style="text-align: center;">
-  <img src="/careerjs.jpg" alt="Career.js" style="width: 500px;">
-  <br>
-  <a href="https://twitter.com/careerjs" target="_blank">
-    <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
-  </a>
+<div class="container-fluid">
+  <header class="row">
+    <div class="col-md-6">
+      {{#link-to 'index'}}
+        <img src="/careerjs.jpg" alt="Career.js" class="logo">
+      {{/link-to}}
+    </div>
+    <div class="col-md-6">
+      <div class="row">
+        <nav class="col-md-12">
+          <ul class="nav nav-pills pull-right">
+            {{#active-link class="nav-item"}}
+              {{#link-to 'index'}}Home{{/link-to}}
+            {{/active-link}}
+            {{#active-link class="nav-item"}}
+              {{#link-to 'about'}}About{{/link-to}}
+            {{/active-link}}
+          </ul>
+        </nav>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p>A podcast where three JavaScript developers discuss strategies and tips to help your career as a software developer.</p>
+          <p>Have a question you'd like to ask? Know someone that you'd like to hear on the show? Send us an email at hi@careerjs.com.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          {{subscribe-form}}
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="row main-content">
+    {{outlet}}
+  </section>
+  <footer class="row">
+    <div class="col-md-12 text-center">
+      <a href="https://twitter.com/careerjs" target="_blank">
+        <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+      </a>
+      <a href="https://twitter.com/careerjs" target="_blank">
+        <i class="fa fa-rss fa-3x" aria-hidden="true"></i>
+      </a>
+    </div>
+  </footer>
 </div>

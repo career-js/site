@@ -7,6 +7,8 @@ const Router = Ember.Router.extend(googlePageview, {
 });
 
 Router.map(function() {
+  this.route('show-notes', { path: ':id' });
+  this.route('about');
 });
 
 export default Router;
