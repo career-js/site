@@ -2,40 +2,79 @@
 @import "_mailchimp";
 
 body {
-  background: $secondary-color;
+  background: white;
+  color: $text-color;
+  font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
 }
 
 header {
-  color: white;
+  background-color: $secondary-color;
+  padding-bottom: 40px;
+
+  a {
+    background-image: url(/careerjs.jpg);
+    background-size: cover;
+    height: 300px;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .tagline {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    width: 60%;
+    margin: auto;
+  }
 }
 
-.logo {
-  width: 100%;
-}
-
-nav {
-  margin-top: 20px;
-  margin-bottom: 50px;
-}
-
-.nav-item {
-  margin-right: 20px;
-}
-
-.nav-item a {
-  color: white;
-}
-
-a .fa {
-  color: white;
-}
-
-.subscribe-form {
-  color: $secondary-color;
-}
-
-.main-content {
-  background-color: white;
-  padding-top: 20px;
+.social-icons {
+  background-color: $secondary-color;
+  text-align: center;
   padding-bottom: 20px;
+  a {
+    margin-right: 25px;
+    text-decoration: none;
+    .fa {
+      color: white;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
 }
+
+a, a:hover {
+  color: $primary-color;
+}
+//
+// .logo {
+//   width: 100%;
+// }
+//
+// nav {
+//   margin-top: 20px;
+//   margin-bottom: 50px;
+// }
+//
+// .nav-item {
+//   margin-right: 20px;
+// }
+//
+// .nav-item a {
+//   color: $secondary-color;
+// }
+//
+
+//
+// .subscribe-form {
+//   color: $secondary-color;
+// }
+//
+// .main-content {
+//   background-color: white;
+//   padding-top: 20px;
+//   padding-bottom: 20px;
+// }

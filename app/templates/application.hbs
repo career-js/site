@@ -1,47 +1,52 @@
+{{!-- <div class="container-fluid">
+  <nav class="col-md-12">
+    <ul class="nav nav-pills pull-right">
+      {{#active-link class="nav-item"}}
+        {{#link-to 'index'}}Home{{/link-to}}
+      {{/active-link}}
+      {{#active-link class="nav-item"}}
+        {{#link-to 'about'}}About{{/link-to}}
+      {{/active-link}}
+    </ul>
+  </nav>
+</div> --}}
+<header>
+  {{#link-to 'index'}}{{/link-to}}
+  <p class="tagline">A podcast where three JavaScript developers discuss strategies and tips to help your career as a software developer.</p>
+</header>
+<div class="social-icons">
+  <a href="https://twitter.com/careerjs" target="_blank">
+    <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+  </a>
+  <a href="https://twitter.com/careerjs" target="_blank">
+    <i class="fa fa-rss fa-3x" aria-hidden="true"></i>
+  </a>
+</div>
+
 <div class="container-fluid">
-  <header class="row">
+  <section class="row" style="margin-top: 20px;">
     <div class="col-md-6">
-      {{#link-to 'index'}}
-        <img src="/careerjs.jpg" alt="Career.js" class="logo">
-      {{/link-to}}
+      <div class="col-md-12">
+        <p></p>
+        <p>Have a question you'd like to ask? Know someone that you'd like to hear on the show? Send us an email at <a href="mailto:hi@careerjs.com">hi@careerjs.com</a>.</p>
+      </div>
     </div>
     <div class="col-md-6">
-      <div class="row">
-        <nav class="col-md-12">
-          <ul class="nav nav-pills pull-right">
-            {{#active-link class="nav-item"}}
-              {{#link-to 'index'}}Home{{/link-to}}
-            {{/active-link}}
-            {{#active-link class="nav-item"}}
-              {{#link-to 'about'}}About{{/link-to}}
-            {{/active-link}}
-          </ul>
-        </nav>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <p>A podcast where three JavaScript developers discuss strategies and tips to help your career as a software developer.</p>
-          <p>Have a question you'd like to ask? Know someone that you'd like to hear on the show? Send us an email at hi@careerjs.com.</p>
-        </div>
-      </div>
       <div class="row">
         <div class="col-md-12">
           {{subscribe-form}}
         </div>
       </div>
     </div>
-  </header>
+  </section>
   <section class="row main-content">
     {{outlet}}
   </section>
-  <footer class="row">
-    <div class="col-md-12 text-center">
-      <a href="https://twitter.com/careerjs" target="_blank">
-        <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
-      </a>
-      <a href="https://twitter.com/careerjs" target="_blank">
-        <i class="fa fa-rss fa-3x" aria-hidden="true"></i>
-      </a>
+  {{!-- <footer class="row">
+    <div class="col-md-8">
+      <h3>About</h3>
+      <p></p>
     </div>
-  </footer>
+    <div class="col-md-4"></div>
+  </footer> --}}
 </div>
