@@ -26,13 +26,19 @@
     "title": "How to Level Up Your Career with Kent C. Dodds",
     "releaseDate": "7/11//2016",
     "image": "kentcdodds.png",
-    "description": "This is an interview with Kent C. Dodds on his career as a software developer."
+    "description": "This is an interview with Kent C. Dodds on his career as a software developer.",
+    "links": {
+      "showNotes": "/show-notes/3.json"
+    }
   },
   {
     "id": "4",
     "simplecastID": "41356",
     "title": "Learning JavaScript",
     "releaseDate": "7/18/2016",
-    "description": "Learning JavaScript can be hard. In this episode we'll discuss how we taught ourselves this language and how you can too."
+    "description": "Learning JavaScript can be hard. In this episode we'll discuss how we taught ourselves this language and how you can too.",
+    "links": {
+      "showNotes": "/show-notes/4.json"
+    }
   }
 ]
