@@ -1,24 +1,13 @@
 [
   {
-    "id": "0",
-    "simplecastID": "41272",
-    "title": "Introducing Career.js",
-    "releaseDate": "6/20/2016",
-    "description": "This is an introduction episode to the Career.js podcast. Jeff, David and I will discuss our careers as software developers."
-  },
-  {
-    "id": "1",
-    "simplecastID": "41353",
-    "title": "Is College Necessary for a Software Developer?",
-    "releaseDate": "6/27/2016",
-    "description": "When you're first starting out as a software developer should you go to College?"
-  },
-  {
-    "id": "2",
-    "simplecastID": "41354",
-    "title": "Creating a Personal Brand as a Software Developer",
-    "releaseDate": "7/4/2016",
-    "description": "What should you do to create a personal brand?"
+    "id": "4",
+    "simplecastID": "41356",
+    "title": "Learning JavaScript",
+    "releaseDate": "7/18/2016",
+    "description": "Learning JavaScript can be hard. In this episode we'll discuss how we taught ourselves this language and how you can too.",
+    "links": {
+      "showNotes": "/show-notes/4.json"
+    }
   },
   {
     "id": "3",
@@ -32,13 +21,24 @@
     }
   },
   {
-    "id": "4",
-    "simplecastID": "41356",
-    "title": "Learning JavaScript",
-    "releaseDate": "7/18/2016",
-    "description": "Learning JavaScript can be hard. In this episode we'll discuss how we taught ourselves this language and how you can too.",
-    "links": {
-      "showNotes": "/show-notes/4.json"
-    }
+    "id": "2",
+    "simplecastID": "41354",
+    "title": "Creating a Personal Brand as a Software Developer",
+    "releaseDate": "7/4/2016",
+    "description": "What should you do to create a personal brand?"
+  },
+  {
+    "id": "1",
+    "simplecastID": "41353",
+    "title": "Is College Necessary for a Software Developer?",
+    "releaseDate": "6/27/2016",
+    "description": "When you're first starting out as a software developer should you go to College?"
+  },
+  {
+    "id": "0",
+    "simplecastID": "41272",
+    "title": "Introducing Career.js",
+    "releaseDate": "6/20/2016",
+    "description": "This is an introduction episode to the Career.js podcast. Jeff, David and I will discuss our careers as software developers."
   }
 ]
