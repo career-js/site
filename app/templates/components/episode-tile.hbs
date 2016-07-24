@@ -1,0 +1,8 @@
+<span class="episode-number">#{{episode.id}}</span>
+{{#if episode.image}}
+  <img src="/episode-images/{{episode.image}}" class="episode-image" alt="Career.js">
+{{else}}
+  <img src="/careerjs.jpg" class="episode-image" alt="Career.js">
+{{/if}}
+<span class="release-date">{{episode.releaseDate}}</span>
+<h5>{{episode.title}}</h5>

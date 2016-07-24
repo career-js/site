@@ -1,0 +1,20 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+      <span>Episode #{{model.id}}</span>
+      <h2>{{model.title}}</h2>
+      <span class="release-date">{{model.releaseDate}}</span>
+      <br>
+      <br>
+      {{#if model.image}}
+        <img src="/episode-images/{{model.image}}" class="episode-image" alt="Career.js">
+      {{else}}
+        <img src="/careerjs.jpg" class="episode-image" alt="Career.js">
+      {{/if}}
+    </div>
+    <div class="col-md-8">
+      <iframe frameborder="0" height="36px" scrolling="no" src={{model.iframeURL}} width="100%"></iframe>
+      <p>{{model.description}}</p>
+    </div>
+  </div>
+</div>

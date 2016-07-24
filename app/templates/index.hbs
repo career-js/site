@@ -1,4 +1,48 @@
-{{!-- <div class="col-md-12">
-  <h3>Latest Episodes</h3>
-  <p>Episodes listed here...</p>
-</div> --}}
+<header>
+  {{#link-to 'index'}}{{/link-to}}
+  <p class="tagline">A podcast where three JavaScript developers discuss strategies and tips to help your career as a software developer.</p>
+</header>
+<div class="social-icons">
+  <a href="https://twitter.com/careerjs" target="_blank">
+    <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+  </a>
+  <a href="http://simplecast.com/podcasts/2067/rss" target="_blank">
+    <i class="fa fa-rss fa-3x" aria-hidden="true"></i>
+  </a>
+</div>
+
+<div class="container-fluid">
+  <section class="row" style="margin-top: 20px;">
+    <div class="col-md-6">
+      <div class="col-md-12">
+        <p></p>
+        <p>Have a question you'd like to ask? Know someone that you'd like to hear on the show? Send us an email at <a href="mailto:hi@careerjs.com">hi@careerjs.com</a>.</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-12">
+          {{subscribe-form}}
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="row main-content">
+    <div class="col-md-12">
+      <div class="row">
+        {{#each last4Episodes as |episode|}}
+          <div class="col-md-3">
+            {{episode-tile episode=episode onClick=(action 'viewEpisode' episode.id)}}
+          </div>
+        {{/each}}
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="text-xs-right text-md-right text-lg-right">
+            {{#link-to 'episodes' class="btn"}}View All {{model.length}} Episodes{{/link-to}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

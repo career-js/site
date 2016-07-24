@@ -49,32 +49,52 @@ header {
 a, a:hover {
   color: $primary-color;
 }
-//
-// .logo {
-//   width: 100%;
-// }
-//
-// nav {
-//   margin-top: 20px;
-//   margin-bottom: 50px;
-// }
-//
-// .nav-item {
-//   margin-right: 20px;
-// }
-//
-// .nav-item a {
-//   color: $secondary-color;
-// }
-//
 
-//
-// .subscribe-form {
-//   color: $secondary-color;
-// }
-//
-// .main-content {
-//   background-color: white;
-//   padding-top: 20px;
-//   padding-bottom: 20px;
-// }
+.episode {
+  position: relative;
+  padding: 20px;
+  cursor: pointer;
+
+  .episode-number {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    color: white;
+  }
+
+  .release-date {
+    color: #aaa;
+    font-style: italic;
+  }
+}
+
+.episode-image {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+nav {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-item a {
+  color: $secondary-color;
+}
+
+.logo {
+  color: $secondary-color;
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 150%;
+  margin: 0;
+
+  a:link, a:visited, a:hover, a:active {
+    color: $primary-color;
+    text-decoration: none;
+  }
+}
