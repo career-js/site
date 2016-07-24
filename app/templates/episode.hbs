@@ -1,8 +1,7 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-4">
-      <span>Episode #{{model.id}}</span>
-      <h2>{{model.title}}</h2>
+    <div class="col-md-3 col-md-offset-2">
+      <h2>Ep. {{model.id}} - {{model.title}}</h2>
       <span class="release-date">{{model.releaseDate}}</span>
       <br>
       <br>
@@ -12,9 +11,17 @@
         <img src="/careerjs.jpg" class="episode-image" alt="Career.js">
       {{/if}}
     </div>
-    <div class="col-md-8">
-      <iframe frameborder="0" height="36px" scrolling="no" src={{model.iframeURL}} width="100%"></iframe>
+    <div class="col-md-5">
       <p>{{model.description}}</p>
+      <iframe frameborder="0" height="36px" scrolling="no" src={{model.iframeURL}} width="100%"></iframe>
+      <br><br>
+      <h5>Show Notes</h5>
+      {{#if model.showNotes.markdown}}
+        {{markdown-to-html model.showNotes.markdown}}
+      {{else}}
+        <p>Not available.</p>
+      {{/if}}
     </div>
+    <div class="col-md-2"></div>
   </div>
 </div>

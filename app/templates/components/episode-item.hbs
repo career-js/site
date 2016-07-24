@@ -1,0 +1,12 @@
+<div class="text-md-right">
+  <span class="release-date">{{episode.releaseDate}}</span>
+</div>
+<h5>
+  {{#link-to 'episode' episode.id}}
+    Ep. {{episode.id}} - {{episode.title}}
+  {{/link-to}}
+</h5>
+<p>{{episode.description}}</p>
+<div class="text-md-right">
+  {{#link-to 'episode' episode.id class="view-episode"}}View Episode{{/link-to}}
+</div>

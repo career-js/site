@@ -2,12 +2,16 @@
 @import "_mailchimp";
 
 body {
-  background: white;
+  background: #F4F4F4;
   color: $text-color;
   font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
 }
 
 header {
+  background: white;
+}
+
+.banner {
   background-color: $secondary-color;
   padding-bottom: 40px;
 
@@ -47,7 +51,7 @@ header {
 }
 
 a, a:hover {
-  color: $primary-color;
+  color: $text-color;
 }
 
 .episode {
@@ -61,11 +65,12 @@ a, a:hover {
     right: 35px;
     color: white;
   }
+}
 
-  .release-date {
-    color: #aaa;
-    font-style: italic;
-  }
+.release-date {
+  color: #aaa;
+  font-style: italic;
+  font-size: 0.85em;
 }
 
 .episode-image {
@@ -87,14 +92,28 @@ nav {
 }
 
 .logo {
-  color: $secondary-color;
   font-size: 2em;
   font-weight: bold;
   line-height: 150%;
   margin: 0;
 
   a:link, a:visited, a:hover, a:active {
-    color: $primary-color;
+    color: $text-color;
     text-decoration: none;
   }
+}
+
+div.container-fluid {
+  margin-top: 20px;
+}
+
+.episode-item {
+  background-color: white;
+  padding: 20px;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.view-episode {
+  font-style: italic;
+  font-size: 0.85em;
 }

@@ -1,17 +1,10 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-8 col-md-offset-4">
-      <ol>
-        {{#each model as |episode|}}
-          <li>
-            <h5>
-              {{#link-to 'episode' episode.id}}
-                {{episode.title}}
-              {{/link-to}}
-            </h5>
-          </li>
-        {{/each}}
-      </ol>
+    <div class="col-md-6 col-md-offset-3">
+      {{#each model as |episode|}}
+        {{episode-item episode=episode}}
+      {{/each}}
     </div>
+    <div class="col-md-3"></div>
   </div>
 </div>
