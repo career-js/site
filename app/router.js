@@ -10,7 +10,8 @@ Router.map(function() {
   this.route('show-notes', { path: ':id' });
   this.route('about');
   this.route('episodes');
-  this.route('episode', { path: 'episodes/:id' });
+  this.route('episode', { path: ':id' });
+  this.route('404');
 });
 
 export default Router;
