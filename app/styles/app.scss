@@ -27,7 +27,7 @@ header {
   .tagline {
     color: white;
     text-align: center;
-    font-size: 30px;
+    font-size: 2em;
     width: 60%;
     margin: auto;
   }
@@ -122,3 +122,5 @@ div.container-fluid {
   margin-top: 20px;
   text-align: center;
 }
+
+@import "_mobile";
