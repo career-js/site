@@ -3,6 +3,7 @@
     "id": "5",
     "simplecastID": "43550",
     "title": "Teaching Code with Aaron Larner",
+    "guest": "Aaron Larner",
     "releaseDate": "8/01/2016",
     "description": "Aaron Larner has been a developer and a teacher- most recently at The Iron Yard, a 12-week coding bootcamp.  We discuss his history, his teaching philosophy, and what's next for someone who's trained so many young developers."
   },
@@ -20,6 +21,7 @@
     "id": "3",
     "simplecastID": "41355",
     "title": "How to Level Up Your Career with Kent C. Dodds",
+    "guest": "Kent C. Dodds",
     "releaseDate": "7/11//2016",
     "image": "kentcdodds.png",
     "description": "This is an interview with Kent C. Dodds on his career as a software developer.",

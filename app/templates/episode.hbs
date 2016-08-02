@@ -5,11 +5,7 @@
       <span class="release-date">{{model.releaseDate}}</span>
       <br>
       <br>
-      {{#if model.image}}
-        <img src="/episode-images/{{model.image}}" class="episode-image" alt="Career.js">
-      {{else}}
-        <img src="/careerjs.jpg" class="episode-image" alt="Career.js">
-      {{/if}}
+      {{episode-image src=model.image alt=model.guest}}
     </div>
     <div class="col-md-5">
       <p>{{model.description}}</p>
