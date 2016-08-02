@@ -1,5 +1,12 @@
 [
   {
+    "id": "5",
+    "simplecastID": "43550",
+    "title": "Teaching Code with Aaron Larner",
+    "releaseDate": "8/01/2016",
+    "description": "Aaron Larner has been a developer and a teacher- most recently at The Iron Yard, a 12-week coding bootcamp.  We discuss his history, his teaching philosophy, and what's next for someone who's trained so many young developers."
+  },
+  {
     "id": "4",
     "simplecastID": "41356",
     "title": "Learning JavaScript",
