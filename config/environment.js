@@ -40,7 +40,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.locationType = 'hash';
+    ENV.locationType = 'history';
     ENV.baseURL = '/site/';
     ENV.googleAnalytics = {
       webPropertyId: 'UA-79722171-1'
