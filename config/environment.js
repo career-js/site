@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'site',
     environment: environment,
     baseURL: '/',
-    locationType: 'auto',
+    locationType: 'history',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -40,7 +40,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.locationType = 'none';
+    ENV.locationType = 'auto';
     //ENV.baseURL = '/site/';
     ENV.googleAnalytics = {
       webPropertyId: 'UA-79722171-1'
