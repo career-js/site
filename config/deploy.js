@@ -17,8 +17,8 @@ module.exports = function(deployTarget) {
 	},
 	rsync: {
 		dest: "/home/deploy/careerjs",
-		username:   "deploy",
-		host:  "deploy@162.243.254.40", 
+		username:  process.env['username'], 
+		host:  proccess.env['host_ip_rsync'], 
 		privateKey:  process.env['privkey'],
 		delete: false
 	}
