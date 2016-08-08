@@ -1,5 +1,12 @@
 [
   {
+    "id": "6",
+    "simplecastID": "44077",
+    "title": "How to Start a Technical Blog",
+    "releaseDate": "8/08/2016",
+    "description": "In this episode, we'll discuss how each of us started our blogs, some of the pitfalls we ran into, the technologies we use, and topics that make for popular blog post ideas."
+  },
+  {
     "id": "5",
     "simplecastID": "43550",
     "title": "Teaching Code with Aaron Larner",
