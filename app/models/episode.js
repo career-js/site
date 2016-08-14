@@ -1,16 +1,14 @@
 import Model from 'ember-data/model';
 import attr from 'ember-data/attr';
-import { belongsTo } from 'ember-data/relationships';
 
 export default Model.extend({
   title: attr('string'),
   description: attr('string'),
-  guest: attr('string'),
-  simplecastID: attr('string'),
-  image: attr('string'),
+  images: attr(),
+  number: attr('number'),
   releaseDate: attr('string'),
-  showNotes: belongsTo(),
+  showNotes: attr('string'),
   iframeURL: Ember.computed(function() {
-    return `https://simplecast.com/e/${this.get('simplecastID')}?style=light`;
+    return `https://simplecast.com/e/${this.get('id')}?style=light`;
   })
 });

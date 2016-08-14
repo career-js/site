@@ -1,4 +1,4 @@
-<span class="episode-number">Ep. {{episode.id}}</span>
-{{episode-image src=episode.image alt=episode.guest}}
-<span class="release-date">{{episode.releaseDate}}</span>
+<span class="episode-number">Ep. {{episode.number}}</span>
+<img src={{episode.images.thumb}} class="episode-image">
+<span class="release-date">{{moment-format episode.releaseDate 'LL'}}</span>
 <h5>{{episode.title}}</h5>
