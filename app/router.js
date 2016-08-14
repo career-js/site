@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('episodes');
   this.route('episode', { path: ':number' });
   this.route('404');
+  this.route('book');
 });
 
 export default Router;
