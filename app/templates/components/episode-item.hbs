@@ -1,9 +1,9 @@
 <div class="text-md-right">
-  <span class="release-date">{{episode.releaseDate}}</span>
+  <span class="release-date">{{moment-format episode.releaseDate 'LL'}}</span>
 </div>
 <h5>
   {{#link-to 'episode' episode.id}}
-    Ep. {{episode.id}} - {{episode.title}}
+    {{episode.title}}
   {{/link-to}}
 </h5>
 <p>{{episode.description}}</p>

@@ -8,12 +8,10 @@ export default Ember.Route.extend({
   },
   model(params)  {
     return this.store.findAll('episode').then((episodes) => {
-      console.log('sdf');
-      return episodes.findBy('id', params.id);
+      return episodes.findBy('number', parseInt(params.number));
     });
   },
   afterModel(model) {
-    console.log('afterMOdle', model);
     if (!model) {
       this.transitionTo('404');
     }

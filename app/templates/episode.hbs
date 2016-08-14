@@ -1,19 +1,19 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-3 col-md-offset-2">
-      <h2>Ep. {{model.id}} - {{model.title}}</h2>
-      <span class="release-date">{{model.releaseDate}}</span>
+      <h2>{{model.title}}</h2>
+      <span class="release-date">{{moment-format model.releaseDate 'LL'}}</span>
       <br>
       <br>
-      {{episode-image src=model.image alt=model.guest}}
+      <img src={{model.images.thumb}} class="episode-image">
     </div>
     <div class="col-md-5">
       <p>{{model.description}}</p>
       <iframe frameborder="0" height="36px" scrolling="no" src={{model.iframeURL}} width="100%"></iframe>
       <br><br>
       <h5>Show Notes</h5>
-      {{#if model.showNotes.markdown}}
-        {{markdown-to-html model.showNotes.markdown}}
+      {{#if model.showNotes}}
+        {{markdown-to-html model.showNotes}}
       {{else}}
         <p>Not available.</p>
       {{/if}}

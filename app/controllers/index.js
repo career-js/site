@@ -14,8 +14,8 @@ export default Ember.Controller.extend({
     return episodes;
   }),
   actions: {
-    viewEpisode(id) {
-      this.transitionToRoute('episode', id);
+    viewEpisode(number) {
+      this.transitionToRoute('episode', number);
     }
   }
 });

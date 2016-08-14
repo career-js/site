@@ -37,7 +37,7 @@
       <div class="row">
         {{#each last4Episodes as |episode|}}
           <div class="col-md-3">
-            {{episode-tile episode=episode onClick=(action 'viewEpisode' episode.id)}}
+            {{episode-tile episode=episode onClick=(action 'viewEpisode' episode.number)}}
           </div>
         {{/each}}
       </div>
